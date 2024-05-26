@@ -32,16 +32,16 @@ Kompleksnosta e 5, do resenieto stignav so pomos na google.
 
 void testMultipleCondition() {
         List<Item> items1 = List.of(new Item("item1", "01234", 350, 0.1f));
-        assertFalse(SILab2.checkCart(items1, 315)); // 350*0.1 = 35, 350 - 35 - 30 = 285
+        assertFalse(SILab2.checkCart(items1, 315)); 
 
         List<Item> items2 = List.of(new Item("item1", "01234", 250, 0.1f));
-        assertFalse(SILab2.checkCart(items2, 250)); // 250*0.1 = 25, 250 - 25 = 225
+        assertFalse(SILab2.checkCart(items2, 250)); 
 
         List<Item> items3 = List.of(new Item("item1", "01234", 350, 0));
-        assertFalse(SILab2.checkCart(items3, 350)); // 350
+        assertFalse(SILab2.checkCart(items3, 350)); 
 
         List<Item> items4 = List.of(new Item("item1", "11234", 350, 0.1f));
-        assertFalse(SILab2.checkCart(items4, 315)); // 350*0.1 = 35, 350 - 35 = 315
+        assertFalse(SILab2.checkCart(items4, 315)); 
     }
 }
 
